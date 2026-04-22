@@ -1,4 +1,4 @@
-# Open Design and Technology  
+# Open Design and Technology 
 ## Final Project README
 
 > **Project Weight:** 70%  
