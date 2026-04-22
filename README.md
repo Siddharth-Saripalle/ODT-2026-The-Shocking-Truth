@@ -450,11 +450,19 @@ Insert a sketch or screenshot of the app interface.
 
 ## 12.1 Full BOM
 
-| Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
-|---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| Item                    |          Quantity | In Kit? | Need to Buy? | Estimated Cost (₹) | Material / Spec | Why This Choice?                    |
+| ----------------------- | ----------------: | ------- | ------------ | -----------------: | --------------- | ----------------------------------- |
+| MT3608 Boost Converter  |                 1 | No      | Yes          |                100 | Step-up module  | To precisely control output voltage |
+| PC817 Optocoupler IC    | 1 packet (~3 pcs) | No      | Yes          |                100 | Isolation IC    | Electrical isolation for safety     |
+| 50mA Glass Fuse         |                 1 | No      | Yes          |                 20 | 5x20mm          | Current limiting for safety         |
+| Fuse Holder             |                 1 | No      | Yes          |                 20 | 5x20mm          | Secure fuse mounting                |
+| 10Ω Resistors           |            1 pack | No      | Yes          |                 30 | Standard        | Current limiting                    |
+| 47Ω Resistors           |            1 pack | No      | Yes          |                 30 | Standard        | Fine tuning current                 |
+| 100Ω Resistors          |            1 pack | No      | Yes          |                 30 | Standard        | Safety + control                    |
+| TENS/EMS Electrode Pads |            1 pack | No      | Yes          |                100 | Medical pads    | Safe interface with body            |
+| 9V Batteries            |                 6 | No      | Yes          |                180 | 9V              | Portable power source               |
+| 18650 Battery           |                 2 | No      | Yes          |               ~200 | Li-ion cell     | Backup power option                 |
+
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -477,17 +485,23 @@ Examples:
 
 ## 12.4 Budget Summary
 
-| Budget Item | Estimated Cost |
-|---|---:|
-| Electronics | `[Cost]` |
-| Mechanical parts | `[Cost]` |
-| Fabrication materials | `[Cost]` |
-| Purchased extras | `[Cost]` |
-| Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| Budget Item           |        Estimated Cost (₹) |
+| --------------------- | ------------------------: |
+| Electronics           |                      ~900 |
+| Mechanical parts      | 0 (foam board – provided) |
+| Fabrication materials |                         0 |
+| Stationary            |                      ~100 |
+| Purchased extras      |            Included above |
+| Contingency           |                      ~100 |
+| **Total**             |                 **~1100** |
+
 
 ## 12.5 Budget Reflection
-If your cost is too high, what can be simplified, removed, substituted, or shared?
+The cost was kept minimal by:
+
+using available components,
+avoiding complex fabrication,
+focusing only on essential electronics.
 
 **Response:**  
 `[Write here]`
@@ -507,7 +521,13 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+We divided tasks based on our individual strengths and areas of interest.
+Rudraksh handled most of the electronics and circuit development, including implementation and debugging.
+I (Siddharth) handled component selection, procurement, and product fabrication, especially the wearable structure.
+We made key electronics decisions together, but execution was primarily handled by Rudraksh.
+The product form, interaction, and documentation were primarily handled by me.
+Rudraksh worked on code updates and system logic, while I focused on documentation and tracking progress.
+We continuously reviewed progress during build sessions and adjusted tasks as needed.
 
 ## 13.2 Task Breakdown
 
@@ -524,15 +544,15 @@ Include:
 
 ## 13.3 Responsibility Split
 
-| Area | Main Owner | Support Owner |
-|---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Area                 | Main Owner           | Support Owner |
+| -------------------- | -------------------- | ------------- |
+| Concept and gameplay | Siddharth + Rudraksh | —             |
+| Electronics          | Rudraksh             | Siddharth     |
+| Coding               | Rudraksh             | —             |
+| Mechanical build     | Siddharth            | Rudraksh      |
+| Testing              | Rudraksh             | Siddharth     |
+| Documentation        | Siddharth            | —             |
+
 
 ---
 
