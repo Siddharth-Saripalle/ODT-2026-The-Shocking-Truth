@@ -8,10 +8,10 @@
 
 ## 1.2 Team Members
 
-| Name | Primary Role | Secondary Role | Strengths Brought to the Project |
-|---|---|---|---|
-| `[Student 1]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Student 2]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| Name                | Primary Role                      | Secondary Role          | Strengths Brought to the Project                             |
+| ------------------- | --------------------------------- | ----------------------- | ------------------------------------------------------------ |
+| Rudraksh Uniyal     | Electronics / Coding / Testing            | Mechanics | Circuit building, microcontroller handling, debugging        |
+| Siddharth Saripalle | Fabrication / Mechanics / Product | Electronics             | Physical prototyping, form development, interaction build |
 
 ## 1.3 Project Title
 `[Enter the title of your project]`
