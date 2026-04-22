@@ -14,10 +14,10 @@
 | Siddharth Saripalle | Fabrication / Mechanics / Product | Electronics             | Physical prototyping, form development, interaction build |
 
 ## 1.3 Project Title
-`[Enter the title of your project]`
+The Shocking Truth
 
 ## 1.4 One-Line Pitch
-`[Describe your project in one sentence]`
+A wearable interactive system that allows one user to influence another user’s balance by electrically stimulating their vestibular system.
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -27,7 +27,23 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+This project is a Galvanic Vestibular Stimulation (GVS) device, a non-invasive system that applies small, controlled electrical currents through electrodes placed near the mastoid region to stimulate the vestibular system, which is responsible for balance.
+
+The project is structured as a two-user interactive experience:
+
+One user (dependent variable) wears the device.
+Another user (independent/controlled variable) operates a controller that influences the stimulation.
+
+The experience creates a visible physical response—subtle shifts in balance (left/right) in the wearer.
+
+What makes this engaging is the realization that the human body behaves like a responsive system, where external electrical input can influence internal sensory perception. This principle is already used in medical and research contexts, but here it is translated into a playful, controlled interaction.
+
+The project aims to evoke:
+
+curiosity,
+controlled experimentation,
+surprise,
+and a sense of awe at the interface between technology and the human body.
 
 ---
 
@@ -53,7 +69,17 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+This is an interactive, two-person control experience.
+
+The experience involves one person actively controlling and another responding involuntarily.
+The participant wearing the device experiences externally induced shifts in balance, creating a sensation of controlled movement.
+The controlling user experiences agency and experimentation, adjusting inputs and observing outcomes.
+
+The system encourages repeated interaction because:
+
+users want to test different inputs,
+observe different responses,
+and understand the limits of control.
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -61,7 +87,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+We are designing this project as a technological interactive experience for classmates and an informed audience interested in experimental interfaces and human-machine interaction.
 
 ---
 
@@ -80,7 +106,12 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+The originality lies in gamifying Galvanic Vestibular Stimulation by introducing a second user as an active controller.
+
+Instead of a passive medical or research setup, the system becomes:
+
+a real-time human control interface,
+where one user dynamically influences another’s physical response.
 
 ---
 
@@ -96,38 +127,38 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+Controller input → electrical stimulation → vestibular response → physical shift → observation → adjustment → repeat
 
 ## 4.2 Intended Player / Audience
 
-| Question | Response |
-|---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| Question                            | Response                                                                                                                  |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Who is this for?                    | Educated users, including those interested in neuroscience, human-machine interaction, and controlled stimulation systems |
+| Age range                           | 18–28                                                                                                                     |
+| Solo or multiplayer                 | Two-person interaction                                                                                                    |
+| Expected duration of one round      | No fixed duration; interaction-based                                                                                      |
+| What should the player feel?        | User 1: controlled (in a safe and stable manner) <br> User 2: sense of control, curiosity, experimentation                |
+| Is explanation required before use? | Yes                                                                                                                       |
+
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+Approach: The user encounters a wearable setup and a separate control interface.
+Start: User 1 wears the device with electrodes positioned correctly.
+First Action: User 2 activates the controller.
+Main Interaction: User 2 varies inputs to control stimulation direction/intensity.
+System Response: User 1 experiences a shift in balance (left/right deviation).
+End Condition: Interaction pauses or stops when control input ceases.
+Reset: System returns to neutral state, ready for the next interaction.
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[Rule 4]`
-
+User 1 must remain in a stable standing position.
+User 2 controls the system using defined input controls.
+Stimulation must remain within safe, predefined limits.
+Interaction stops immediately if discomfort occurs.
 ---
 
 # 5. Definition of Success
@@ -135,24 +166,29 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
+- [ ] User 1 experiences a noticeable vestibular shift (directional tilt)
+- [ ]  No unsafe sensations (pain, sharp shocks, instability spikes) occur
+- [ ] User 2 can reliably influence User 1’s movement
+- [ ] System response is consistent and repeatable
+- [ ] Interaction feels seamless between control and response
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+The smallest working version is:
+
+a functional electrode setup,
+delivering controlled electrical signals,
+producing a detectable response in the user.
+- Bluetooth-based remote control
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- Neopixel-based visual feedback indicators
+- Adjustable intensity modes
+- Directional presets for controlled movement patterns
 
 ---
 
