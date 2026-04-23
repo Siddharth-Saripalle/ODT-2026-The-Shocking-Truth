@@ -10,7 +10,7 @@
 
 | Name                | Primary Role                      | Secondary Role          | Strengths Brought to the Project                             |
 | ------------------- | --------------------------------- | ----------------------- | ------------------------------------------------------------ |
-| Rudraksh Uniyal     | Electronics / Coding / Testing            | Mechanics | Circuit building, microcontroller handling, debugging        |
+| Rudraksh Uniyal     | Electronics / Coding / Testing            | Mechanics | Circuit building,code, debugging        |
 | Siddharth Saripalle | Fabrication / Mechanics / Product | Electronics             | Physical prototyping, form development, interaction build |
 
 ## 1.3 Project Title
