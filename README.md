@@ -4,7 +4,7 @@
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[Enter your group name]`
+43 V IN THE V (volts, vegas nerve)
 
 ## 1.2 Team Members
 
@@ -198,17 +198,8 @@ What features are nice to have but not essential?
 Check all that apply.
 
 - [ ] Electronics-based
-- [ ] Mechanical
-- [ ] Sensor-based
-- [ ] App-connected
-- [ ] Motorized
-- [ ] Sound-based
-- [ ] Light-based
-- [ ] Screen/UI-based
-- [ ] Fabricated structure
 - [ ] Game logic based
 - [ ] Installation / tabletop experience
-- [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
 Explain how the system works in simple terms.
@@ -221,16 +212,44 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`[Write here]`
+The system works as a multi-stage control pipeline:
+
+Controller Input → 2.4 GHz Dongle → Laptop → Terminal Relay Application → Mobile Hotspot Network → ESP32 IP Connection
+
+The laptop reads controller inputs (Left / None / Right + Intensity) and sends these values over the network to the ESP32.
+
+The ESP32 processes this input:
+
+Determines direction (left/right)
+Adjusts intensity using PWM
+
+A 9V battery is stepped up to ~12V using a boost converter.
+This controlled voltage is applied through an H-Bridge, which:
+
+switches polarity (left/right),
+controls output direction,
+and delivers current to electrodes placed on the user.
+
+Simultaneously:
+
+A NeoPixel system provides visual feedback
+Static → Rainbow
+Left → Clockwise animation
+Right → Anticlockwise animation
+
+The final output is a controlled vestibular response, affecting the user’s balance.
 
 ## 6.3 Input / Output Map
 
-| System Part | Type | What It Does |
-|---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| System Part | Type          | What It Does                                                |
+| ----------- | ------------- | ----------------------------------------------------------- |
+| Controller  | Input         | Takes left/right direction and intensity input              |
+| Laptop      | Input / Relay | Reads controller input and sends data to ESP32 over network |
+| ESP32       | Processing    | Interprets input, generates PWM signals, controls outputs   |
+| H-Bridge    | Processing    | Switches polarity (left/right) and controls voltage output  |
+| Electrodes  | Output        | Applies controlled electrical stimulation to the user       |
+| NeoPixel    | Output        | Visual feedback for direction and system state              |
+
 
 ---
 
@@ -478,10 +497,13 @@ Examples:
 
 ## 12.3 Items to Purchase Separately
 
-| Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
-|---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| Item                       | Why Needed                            | Purchase Link | Latest Safe Date to Procure | Status    |
+| -------------------------- | ------------------------------------- | ------------- | --------------------------- | --------- |
+| Optocoupler (extra)        | Additional safety + isolation testing | Local vendor  | Week 3                      | Purchased |
+| Fuse + holder              | Safety control                        | Local vendor  | Week 3                      | Purchased |
+| Lower resistance resistors | Fine current tuning                   | Local vendor  | Week 3                      | Purchased |
+| Extra batteries            | Backup + testing                      | Local vendor  | Week 4                      | Purchased |
+
 
 ## 12.4 Budget Summary
 
@@ -531,16 +553,19 @@ We continuously reviewed progress during build sessions and adjusted tasks as ne
 
 ## 13.2 Task Breakdown
 
-| Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
-|---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| Task ID | Task                                             | Owner                | Estimated Hours | Deadline | Dependency | Status  |
+| ------- | ------------------------------------------------ | -------------------- | --------------: | -------- | ---------- | ------- |
+| T1      | Finalize concept (GVS + interaction model)       | Rudraksh, Siddharth|               3 | Week 1   | None       | Done    |
+| T2      | Research vestibular system & electrode placement | Siddharth, Rudraksh |               4 | Week 1   | T1         | Done    |
+| T3      | Complete BOM & procure components                | Siddharth            |               3 | Week 2   | T1         | Done    |
+| T4      | Build initial circuit (basic stimulation)        | Rudraksh             |               5 | Week 2   | T3         | Done    |
+| T5      | Add optocoupler + H-Bridge integration           | Rudraksh             |               5 | Week 3   | T4         | Done    |
+| T6      | Develop control logic (direction + intensity)    | Rudraksh             |               4 | Week 3   | T5         | Done    |
+| T7      | Design and build wearable structure              | Siddharth            |               5 | Week 4   | T1         | Done    |
+| T8      | Integrate full system (hardware + control)       | Siddharth + Rudraksh |               4 | Week 4   | T6, T7     | Done    |
+| T9      | Testing and calibration                          | Rudraksh |               3 | Week 4   | T8         | Done    |
+| T10     | Documentation and final refinement               | Siddharth            |               3 | Week 4   | T9         | Ongoing |
+
 
 ## 13.3 Responsibility Split
 
