@@ -801,7 +801,7 @@ Determining the exact voltage and electrode placement required to produce a cons
 ---
 
 # 17. Build Documentation
-
+https://youtube.com/playlist?list=PLQ0Qk5xXf2qBRR_sd0ukBpLgNMG8cwRYC&si=t3DsSPHR7Ea-Ma3s
 ## 17.1 Fabrication Process
 Describe how the project was physically made.
 
