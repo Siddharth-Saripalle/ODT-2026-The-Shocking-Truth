@@ -362,7 +362,7 @@ Common ground shared across system.
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-Added a file with name 9.3
+Added a file in images
 
 ## 9.4 Power Plan
 
@@ -437,7 +437,7 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[Upload image and link here]`
+file in images
 
 ## 10.4 Pseudocode
 
@@ -836,7 +836,7 @@ Suggested images:
 - final build.
 
 Example:
-```md
+files in images
 
 
 
